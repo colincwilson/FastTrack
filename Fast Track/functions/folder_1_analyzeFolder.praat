@@ -48,7 +48,7 @@ beginPause: "Set Parameters"
             option: "3"
             option: "4"
     boolean: "Make images comparing analyses", 0
-    boolean: "Make images showing winners", 1
+    boolean: "Make images showing winners", 0
     positive: "Maximum plotting frequency (Hz):", maximum_plotting_frequency
     optionMenu: "Number of bins:", number_of_bins
   			option: "1"
@@ -171,5 +171,5 @@ endif
 @daySecond
 overAllEnd = daySecond
 totalTime = overAllEnd - overAllStart
-writeInfoLine: "Finished!"
+appendInfoLine: "Finished!"
 appendInfoLine: "Process took: " + string$(totalTime) + " seconds."
